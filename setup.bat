@@ -1,0 +1,11 @@
+npm i bcrypt
+npm i body-parser
+npm i ejs
+npm i express
+npm i express-flash
+npm i express-session
+npm i method-override
+npm i mysql
+npm i nodemailer
+npm i nodemon
+npm i rand-token
