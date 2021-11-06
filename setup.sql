@@ -8,6 +8,3 @@ CREATE TABLE accounts (
     `Email` varchar(255),
     `verify` boolean not null default false
 );
-
-SELECT * FROM accounts;
-drop table accounts;
