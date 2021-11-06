@@ -53,10 +53,10 @@ function sendEmail(email, token) {
     var token = token;
  
     var mail = nodemailer.createTransport({
-        service: 'gmail',
+        service: service,
         auth: {
-            user: 'blumilumyt@gmail.com', // Your email id
-            pass: 'egoz2017' // Your password
+            user: email, // Your email id
+            pass: email_password // Your password
         }
     });
  
