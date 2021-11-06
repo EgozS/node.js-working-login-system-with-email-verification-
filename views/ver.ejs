@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/home.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Verify Email</h1>
+            <p id = "error"><%= error %></p>
+            <form action="/send-email" method="post">
+                <input type="text" name="email" placeholder="Email">
+                <div class="rpx"></div>
+                <input type="submit" id = "btn-snd" value="Send verification Email">
+            </form>
+        </div>
+    </body>
+</html>

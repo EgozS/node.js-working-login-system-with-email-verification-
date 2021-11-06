@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(114,103,239);
+    height: 80%;
+    display: grid;
+}
+
+
+
+#btn {
+    font-size: 20px;
+    background-color: rgb(114,103,239);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height:50px;
+    width:200px;
+    transition: 0.5s;
+}
+
+#btn:hover {
+    background-color: rgb(97,88,203);
+    color: white;
+    cursor: pointer;
+}
+/*center .container both verticaly and horizontal*/
+.container {
+    color: rgb(6,6,6);
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    height: auto;
+    background-color: rgb(255,255,255);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 53px -2px rgba(0,0,0,1);
+-webkit-box-shadow: 0px 0px 53px -2px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 53px -2px rgba(0,0,0,1);
+    
+}
+
+.Tpx {
+    padding: 50px;
+}
+
+.Rpx {
+    padding: 5px;
+}
+input[type=text], [type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#btn-scnd {
+    font-size: 15px;
+    background-color: rgb(114,103,239);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height:50px;
+    width:130px;
+    transition: 0.5s;
+}
+
+#btn-scnd:hover, #btn-snd:hover {
+    background-color: rgb(97,88,203);
+    color: white;
+    cursor: pointer;
+}
+
+#btn-snd {
+    font-size: 15px;
+    background-color: rgb(114,103,239);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height:50px;
+    width:200px;
+    transition: 0.5s;
+}
