@@ -10,7 +10,8 @@ a fully functional system for logging in, creating accounts and verifying email 
 
 - registering accounts into database
 - logging in for the first time with a new account will require a email verification 
-- open source, can be used and changed
+- all passwords are hashed, and each user gets a unique id
+- open source, can be used and changed as much as you want
 
 
 
