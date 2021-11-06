@@ -20,7 +20,7 @@ a fully functional system for logging in, creating accounts and verifying email 
 Clone the project
 
 ```bash
-  git clone git@github.com:SkepSickomode/100-working-login-system-js.git
+  git@github.com:SkepSickomode/node.js-working-login-system-with-email-verification-.git
 ```
 
 Go to the project directory
