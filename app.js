@@ -7,6 +7,13 @@ var bodyParser = require('body-parser')
 const bcrypt = require('bcrypt')
 const nodemailer = require("nodemailer");
 
+var host = 'localhost';
+var user = '';
+var passwordDb = '';
+
+var service = 'gmail'  // <-- email company here
+var email = '@gmail.com'; // <-- email address here
+var email_password = ''; // <-- email password here
 
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -15,9 +22,9 @@ app.set('view engine', 'ejs')
 
 //connect to database
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: '',
-    password: '',
+    host: host,
+    user: user,
+    password: passwordDb,
     database: 'copilot'
 })
 
@@ -48,13 +55,13 @@ function sendEmail(email, token) {
     var mail = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: '', // email addres
-            pass: '' // email password
+            user: 'blumilumyt@gmail.com', // Your email id
+            pass: 'egoz2017' // Your password
         }
     });
  
     var mailOptions = {
-        from: '', //sender
+        from: 'blumilumyt@gmail.com',
         to: email,
         subject: 'Email verification - test',
         html: '<p>You requested for email verification, kindly use this <a href="http://localhost:80/verify-email?token=' + token + '">link</a> to verify your email address</p>'
@@ -256,5 +263,5 @@ app.get('/verify-email', function(req, res, next) {
  })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`listening at http://localhost:${port}`)
 })
