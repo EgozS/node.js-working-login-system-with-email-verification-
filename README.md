@@ -43,5 +43,5 @@ Start the server
 
 
 ## 🚀 About Me
-I'm a full stack developer, working with node.js, python and mysql
+I'm a self tought full stack developer, working with node.js, python and mysql
 
